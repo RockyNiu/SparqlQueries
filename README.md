@@ -33,9 +33,9 @@ where
 	{?s ?p ?o}
 };
 drop graph <http://>;
-</code></pre>####find a key word
-<pre><code>
-#### find a key word
+</code></pre>
+####find a key word
+<pre><code>#### find a key word
 select distinct ?s ?p ?o
 where
 {
