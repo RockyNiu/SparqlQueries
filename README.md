@@ -20,8 +20,7 @@ where
 }
 </code></pre>
 ####move triples from one graph to another graph
-<pre><code>
-##### move triples from one graph to another graph
+<pre><code>##### move triples from one graph to another graph
 insert
 {
 	graph <http://test/>
