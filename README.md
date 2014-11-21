@@ -1,0 +1,4 @@
+SparqlQueries
+=============
+
+Useful Sparql queries
