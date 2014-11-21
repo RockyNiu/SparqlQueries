@@ -5,7 +5,7 @@ SparqlQueries
 select (count (*) as ?count)
 where
 {
-	#graph <>
+	#graph g
 	{
 		?s ?p ?o.
 	}
@@ -23,22 +23,22 @@ where
 <pre><code>##### move triples from one graph to another graph
 insert
 {
-	graph <http://test/>
+	graph g1
 	{?s ?p ?o}
 }
 where
 {
-	graph <http://>
+	graph g2
 	{?s ?p ?o}
 };
-drop graph <http://>;
+drop graph g2;
 </code></pre>
 ####find a key word
 <pre><code>#### find a key word
 select distinct ?s ?p ?o
 where
 {
-	#graph <>
+	#graph g
 	{
 		?s ?p ?o .
 		filter (regex(str(?s), 'person','i') || regex(str(?p), 'person','i') || regex(str(?o), 'person','i'))
