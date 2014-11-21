@@ -1,8 +1,7 @@
 SparqlQueries
 =============
 ####count 
-<pre><code>
-#### count
+<pre><code>#### count
 select (count (*) as ?count)
 where
 {
@@ -13,8 +12,7 @@ where
 }
 </code></pre>
 ####list graphs
-<pre><code>
-##### list graphs
+<pre><code>##### list graphs
 select ?g
 where
 {
@@ -35,8 +33,7 @@ where
 	{?s ?p ?o}
 };
 drop graph <http://>;
-</code></pre>
-####find a key word
+</code></pre>####find a key word
 <pre><code>
 #### find a key word
 select distinct ?s ?p ?o
